@@ -21,7 +21,7 @@ make images dictionary
 def loadPiecePNGs():
     pieces = ['wp', 'wR', 'wN', 'wB', 'wK', 'wQ', 'bp', 'bR', 'bN', 'bB', 'bK', 'bQ']
     for piece in pieces:
-        IMAGES[piece] = p.image.load("chess_images_3d/" + piece + ".png")
+        IMAGES[piece] = p.image.load(piece + ".png")
         IMAGES[piece] = p.transform.scale(IMAGES[piece], (2*SQ_SIZE/3, SQ_SIZE))
     #access image by using this dictionary
 
